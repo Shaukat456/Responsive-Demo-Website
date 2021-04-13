@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: black;
+            color:white;
+
+        }
+        .container{
+
+        }
+        .pic {
+            height: 100vh;
+            width: 100vw;
+            /* display: block; */
+            /* margin: auto; */
+            filter: blur(5px);
+            transition: all .1s ease;
+            
+        }
+        .pic:hover {
+            filter: blur(0px);
+            transition: all .1s ease;
+
+        }
+
+        
+        .content{
+            position: absolute;
+            top: 40%;
+            left: 20%;
+            text-align: center;
+            color: black;
+            font-family: cursive;
+            
+        }
+        .services{
+            display: flex;
+            /* margin-left: 4px; */
+            justify-content: center;
+            text-align: center;
+            /* margin-left: ; */
+            /* width: 10em; */
+
+            
+
+
+        }
+        .services > h2{
+            display: flex;
+
+            /* display: block; */
+            /* margin: auto; */
+
+        }
+        .services img{
+            display: inline-block;
+            height: 5rem;
+            width: 5rem;
+            /* display: block; */
+            /* margin: auto; */
+        }
+        .serv{
+            /* display: flex; */
+            /* justify-content: center; */
+            /* line-height: 10em; */
+            margin-left: 5em;
+            margin-top: 5em; 
+            /* display: block; */
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="./_MG_6140.JPG" alt="" class="pic">
+            <div class="content   blu">
+                <h1>WELCOME HERE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium temporibus accusamus aliquid!z</p>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="services">
+            <h2>SERVICES</h2>
+            <div  class="serv" >
+                <img src="./_MG_6138.JPG"  alt="">
+                <h1> FREE COURSES</h1>
+            </div>
+            <div  class="serv">
+                <img src="./_MG_6138.JPG" alt="">
+
+                <h1> FREE COURSES</h1>
+            </div>
+            <div class="serv" >
+                <img src="./_MG_6138.JPG" alt="">
+
+                <h1> FREE COURSES</h1>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
