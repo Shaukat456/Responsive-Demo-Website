@@ -71,12 +71,13 @@
             /* margin: auto; */
 
         }
-        .services img{
+        .services img ,i{
             display: inline-block;
             height: 5rem;
             width: 5rem;
             /* margin-left: 4em; */
-
+            color: white;
+            
         
         
             /* display: block; */
@@ -179,35 +180,52 @@ nav li{
         <div class="services">
            
             <div  class="serv" >
-                <img src="./bg.jpg"  alt="">
+                <img src="./n.jpg"  alt="s">
+                <!-- <i class="fas fa-brain  f5dc" ></i> -->
                 <h1> FREE COURSES</h1>
             </div>
             <div  class="serv">
                 <img src="./bg.jpg" alt="">
+                <!-- <i class="fas fa-brain"></i> -->
 
                 <h1> FREE COURSES</h1>
             </div>
             <div  class="serv">
                 <img src="./bg.jpg" alt="">
-
+                <!-- <i class="fas fa-brain"></i> -->
                 <h1> FREE COURSES</h1>
             </div>
             <div class="serv" >
                 <img src="./bg.jpg" alt="">
-
+<!-- <i class="fas fa-brain"></i> -->
                 <h1> FREE COURSES</h1>
             </div>
         </div>
     </section>
     <footer>
-        SHAUKAT SOHAIL &copy; 
+        SHAUKAT SOHAIL &copy;  
     </footer>
 
 
     <script>
-      
-      
+        const nav=document.querySelector('nav');
+        
+    window.addEventListener('scroll',()=>{
+        const prev=window.pageYOffset;
 
+      if(prev> 10){
+        //   nav.style.display='none'
+          nav.style.transition='all .5s ease'
+        nav.style.marginTop='-30px'
+
+      }  else{
+        // nav.style.display='flex'
+        nav.style.marginTop='0px'
+        nav.style.transition='all .5s ease'
+
+          
+      }
+    })
     </script>
 </body>
 </html>
