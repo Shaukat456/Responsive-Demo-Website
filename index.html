@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <style>
         body{
             margin: 0;
@@ -35,6 +37,7 @@
             /* margin-left: 2em; */
             display: flex;
             justify-content: center;
+            opacity: .6;
         }
         .pic:hover  {
             filter: blur(0px);
@@ -48,8 +51,10 @@
             top: 40%;
             left: 20%;
             text-align: center;
-            color: black;
-            font-family: cursive;
+            color:white;
+            /* font-size: 2; */
+            /* font-family: cursive; */
+            font-family: 'Open Sans', sans-serif;
             
         }
         .services{
@@ -62,6 +67,7 @@
             flex-wrap: wrap;
             /* margin-left: 5em; */
             padding: 2em;
+            font-family: 'Open Sans', sans-serif;
 
             
 
@@ -69,6 +75,7 @@
         }
         .services > h2{
             display: flex;
+            font-family: 'Open Sans', sans-serif;
 
             /* display: block; */
             /* margin: auto; */
@@ -117,6 +124,7 @@
             /* position: fixed; */
             top: 0;
             z-index: 44;
+            font-family: 'Open Sans', sans-serif;
             
         }
         nav li{
@@ -128,15 +136,33 @@
             flex-basis: 2em;
             margin-left: 3em;
         }
+        .about{
+            display: flex;
+            /* text-align: center; */
+            justify-content: center;
+            align-items: center;
+            border-top: 2px solid white;
+            padding: 2%;
+            /* flex-direction: column; */
+        }
+         .inst{
+            height: 15em;
+            width: 15em;
+
+          /* display: grid; */
+          /* place-items: center; */
+            /* border-top: 2px solid white; */
+        }
 
         @media(max-width: 424px){
             .content {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 15%;
     text-align: center;
-    color: black;
-    font-family: cursive;
+    /* color: black; */
+    /* font-family: cursive; */
+    font-family: 'Open Sans', sans-serif;
 }
 .pic{
     height: 70vh;
@@ -145,6 +171,16 @@
 nav{
     display: flex;
     flex-direction: column; 
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid white;
+    padding: 3%;
+    /* flex-direction: column; */
 }
 nav li{
     margin-top: .8em;
@@ -162,6 +198,16 @@ nav li{
                 /* margin-left:1.1em; */
 
             }
+            .about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid white;
+    padding: 3%;
+    /* flex-direction: column; */
+}
         }
     </style>
 </head>
@@ -208,6 +254,12 @@ nav li{
             </div>
         </div>
     </section>
+
+
+    <div class="about">
+        <img src="./bb.png" class="inst" alt="INSTAGRAM">
+       <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. In vel quidem, soluta blanditiis incidunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eum molestiae cum ut unde provident quas recusandae! Dolorem temporibus fugiat non nam corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempore quae, eligendi, minus quisquam sapiente, aspernatur ipsa repellendus ut vel labore ipsum veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laborum quod exercitationem ea libero velit minima omnis fugit amet dolores, illum accusantium magnam! ex quae ad inventore, saepe, consequuntur totam officiis maiores sapiente veniam. Odio, ex itaque? Quae, suscipit. </p>
+    </div>
     <footer>
         SHAUKAT SOHAIL &copy;  
     </footer>
