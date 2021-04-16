@@ -369,14 +369,25 @@ nav li{
       if(prev> 10){
         //   nav.style.display='none'
           nav.style.transition='all .5s ease'
-        nav.style.marginTop='-20px'
+        nav.style.marginTop='-60px'
 
       }  else{
         // nav.style.display='flex'
         nav.style.marginTop='0px'
         nav.style.transition='all .5s ease'
+        // nav.style.position='fixed'
+        // nav.style.top='0px'
+
 
           
+      }
+
+      if (window.pageYOffset> 40){
+            const body=document.querySelector('body');
+            body.style.backgroundColor='black'
+            body.style.color='white'
+
+        
       }
     })
     </script>
